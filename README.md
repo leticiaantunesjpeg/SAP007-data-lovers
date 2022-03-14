@@ -22,7 +22,7 @@ O site permite que o usuário filtre os filmes por diretor e ano de lançamento,
 
 ---
 ## :bookmark_tabs: Histórias de usuário
-As 8 [histórias de usuário](https://www.canva.com/design/DAE3-YMQvbE/view?utm_content=DAE3-YMQvbE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) foram a base de desenvolvimento do protótipo e posterior construção da interface do site levando em conta que cada história descreve uma necessidade do usuário a ser contemplada por uma funcionalidade. O acesso às histórias de usuário [estão neste link](https://www.canva.com/design/DAE3-YMQvbE/view?utm_content=DAE3-YMQvbE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink), uma apresentação na plataforma Canva.
+As histórias de usuário [detalhadas neste link](https://www.canva.com/design/DAE3-YMQvbE/view?utm_content=DAE3-YMQvbE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) foram a base de desenvolvimento do protótipo e posterior construção da interface do site levando em conta que cada história descreve uma necessidade do usuário a ser contemplada por uma funcionalidade.
 
 ---
 ## :computer: Protótipo e UX
