@@ -12,20 +12,17 @@ const filmes = [
   {
     title: "Castle in the Sky",
     director: "Hayao Miyazaki",
-    release_date: "1986",
-    rt_score: "95",
+    release_date: "1986"
   },
   {
     title: "My Neighbor Totoro",
     director: "Hayao Miyazaki",
     release_date: "1988",
-    rt_score: "93",
   },
   {
     title: "Whisper of the Heart",
     director: "Yoshifumi Kondō",
     release_date: "1995",
-    rt_score: "91",
   },
 ];
 
@@ -34,19 +31,16 @@ const filmesDesordenados = [
     title: "My Neighbor Totoro",
     director: "Hayao Miyazaki",
     release_date: "1988",
-    rt_score: "93",
   },
   {
     title: "Whisper of the Heart",
     director: "Yoshifumi Kondō",
     release_date: "1995",
-    rt_score: "91",
   },
   {
     title: "Castle in the Sky",
     director: "Hayao Miyazaki",
     release_date: "1986",
-    rt_score: "95",
   },
 ];
 
@@ -62,13 +56,11 @@ describe("Testar filtro por diretor", () => {
         title: "Castle in the Sky",
         director: "Hayao Miyazaki",
         release_date: "1986",
-        rt_score: "95",
       },
       {
         title: "My Neighbor Totoro",
         director: "Hayao Miyazaki",
         release_date: "1988",
-        rt_score: "93",
       },
     ];
     const filmesFiltrados = filtroDataDiretor(filmes, "Hayao Miyazaki");
@@ -96,13 +88,11 @@ describe("Testar pesquisa de filme", () => {
         title: "Castle in the Sky",
         director: "Hayao Miyazaki",
         release_date: "1986",
-        rt_score: "95",
       },
       {
         title: "Whisper of the Heart",
         director: "Yoshifumi Kondō",
         release_date: "1995",
-        rt_score: "91",
       },
     ];
     const filmesPesquisados = pesquisaDataTítulo(filmes, "the");
