@@ -25,20 +25,15 @@ function extraindoPersonagens(filmes){
 
 function mostrarPersonagens(personagens) {
   for (let j = 0; j < personagens.length; j++) {
-    const cardAnime = document.createElement("section");
+    const cardAnime = document.createElement("article");
     cardAnime.className = "container-card-individual";
     cardAnime.innerHTML = `
-    <div>
     <p class="informação"> ${personagens[j].name} </p>
     <img src= '${personagens[j].img}' class="imagem-poster"></img><br>
-      </div>
-        
-      <div>
-      <div class="informação">Idade: ${personagens[j].age}</div>
-      </div>
-      <div class="informação">Gênero: ${personagens[j].gender}</div>
-      <div class="informação">Espécie: ${personagens[j].specie}</div>
-      `;
+    <p class="informação">Idade: ${personagens[j].age}</p>
+    <p class="informação">Gênero: ${personagens[j].gender}</p>
+    <p class="informação">Espécie: ${personagens[j].specie}</p>
+    `;
     containerAnimes.appendChild(cardAnime);
   }
 }

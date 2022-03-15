@@ -13,18 +13,13 @@ let filmesData = data.films;
 filmesData.forEach(mostrarFilmes);
 
 function mostrarFilmes(data) {
-  const cardAnime = document.createElement("section");
+  const cardAnime = document.createElement("article");
   cardAnime.className = "container-card-individual";
   cardAnime.innerHTML = `
-    <div>
     <p class="informação"> ${data.title} </p>
-    <img src= '${data.poster}'></img><br>
-      </div>
-        
-      <div>
-      <div class="informação">Ano de lançamento: ${data.release_date}</div>
-      </div>
-      <div class="informação">Diretor: ${data.director}</div>
+    <img src= '${data.poster}'></img><br> 
+    <p class="informação">Ano de lançamento: ${data.release_date}</p>
+    <p class="informação">Diretor: ${data.director}</p>
       `;
   containerAnimes.appendChild(cardAnime);
 }
