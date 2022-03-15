@@ -12,12 +12,16 @@ let filmesData = data.films;
 
 let characters = [];
 
-filmesData.map((film) => {
-  const people = film.people;
-  for (let j = 0; j < people.length; j++) {
-    characters.push(people[j]);
-  }
-});
+function extraindoPersonagens(filmes){
+  filmes.map((film) => {
+    const people = film.people;
+    for (let j = 0; j < people.length; j++) {
+      characters.push(people[j]);
+    }
+  });}
+
+  extraindoPersonagens(filmesData);
+
 
 function mostrarPersonagens(personagens) {
   for (let j = 0; j < personagens.length; j++) {
@@ -45,15 +49,15 @@ document.getElementById("recarregar").addEventListener("click", () => {
   location.reload();
 });
 
-document.getElementById("filtroGêneroItem").addEventListener("change", () => {
-  let gênero = document.querySelector(".filtro-gênero");
+document.getElementById("filtroGeneroItem").addEventListener("change", () => {
+  let gênero = document.querySelector(".filtro-genero");
   let personagensFiltrados = filtroDataGênero(characters, gênero.value);
   containerAnimes.innerHTML = "";
   mostrarPersonagens(personagensFiltrados);
 });
 
-document.getElementById("filtroEspécieItem").addEventListener("change", () => {
-  let espécie = document.querySelector(".filtro-espécie");
+document.getElementById("filtroEspecieItem").addEventListener("change", () => {
+  let espécie = document.querySelector(".filtro-especie");
   let personagensFiltrados = filtroDataEspécie(characters, espécie.value);
   containerAnimes.innerHTML = "";
   mostrarPersonagens(personagensFiltrados);
@@ -62,7 +66,7 @@ document.getElementById("filtroEspécieItem").addEventListener("change", () => {
 document
   .getElementById("ordenacaoAlfabeticaItem")
   .addEventListener("change", () => {
-    let nome = document.querySelector(".ordenação-alfabética");
+    let nome = document.querySelector(".ordenacao-alfabetica");
     let nomesOrdenados = ordenaçãoDataPersonagens(characters, nome.value);
     containerAnimes.innerHTML = "";
     mostrarPersonagens(nomesOrdenados);
