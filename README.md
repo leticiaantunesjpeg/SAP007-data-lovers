@@ -7,16 +7,25 @@
 * [1. Sobre o projeto](#dart-sobre-o-projeto)
 * [2. Histórias de usuário](#bookmark_tabs-histórias-de-usuário)
 * [3. Protótipo e UX](#computer-protótipo-e-UX)
-* [4. Resultados](#%EF%B8%8F-resultados)
-* [5. Tecnologias](#robot-tecnologias)
-* [6. Sobre as autoras](#woman_technologist-sobre-a-autora)
+* [4. Organização](#card_file_box-Organização)
+* [5. Resultados](#%EF%B8%8F-resultados)
+* [6. Tecnologias](#robot-tecnologias)
+* [7. Sobre as autoras](#woman_technologist-sobre-a-autora)
 
 ---
 ## :dart: Sobre o projeto 
 
 O projeto [Data Lovers](https://github.com/leticiaantunesjpeg/SAP007-data-lovers) é uma página web foi desenvolvido para visualizar um conjunto de dados que se adeque às necessidades de seu usuário, ou seja, recupera de um banco de dados apenas o valor requisitado pelo usuário através de uma interface gráfica intuitiva.
 
-O tema escolhido pelas autoras do projeto é Studio Ghibli e o site comporta dados a respeito do filme e dos personagens, para que o usuário possa filtrar, ordenar e buscar por informações de seu interesse. O público alvo são jovens a partir de 12 anos, pois, ainda que o público alvo do Studio Ghibli englobe crianças por conta das animações, é necessário que o usuário possa ler e interpretar as informações apresentadas.
+![](./src/imagens/gifREADME.gif)
+
+O tema escolhido pelas autoras do projeto é Studio Ghibli, um estúdio japonês de animação, muito conhecido por seus filmes como **Meu Amigo Totoro**,
+**A Viagem de Chihiro**, **O Castelo Animado**, entre outros grandes sucessos.
+As animações são bem recebidas em todo o mundo e algumas receberam
+várias nomeações e prêmios. De todo esse fandom há um grupo que deseja
+interagir e ver as informações das animações e seus personagens.
+
+O site comporta dados a respeito do filme e dos personagens, para que o usuário possa filtrar, ordenar e buscar por informações de seu interesse. O público alvo são jovens a partir de 12 anos, pois, ainda que o público alvo do Studio Ghibli englobe crianças por conta das animações, é necessário que o usuário possa ler e interpretar as informações apresentadas.
 
 O site permite que o usuário filtre os filmes por diretor e ano de lançamento, ordene os filmes por ordem alfabética, pesquise os filmes de seu interesse e recarregue a página quando lhe for conveniente. A página dos personagens, por sua vez, permite que o usuário filtre-os por gênero e espécie e os ordene por ordem alfabética, bem como pesquise os personagens e recarregue a página.
 
@@ -37,6 +46,14 @@ Foi retirado a ordenação por popularidade da página "filmes" ao estudar a bas
 
 Além de outras pequenas alterações, a página "Sobre as Autoras" foi substituída por um rodapé indicando informações a respeito destas.
 
+---
+## :card_file_box: Organização
+
+A organização e planejamento do projeto e das pequenas tarefas a serem executadas foi exclusivamente realizada pela plataforma trello, [neste quadro](https://trello.com/b/jfg3MgmE).
+
+![img](./src/imagens/organiza%C3%A7%C3%A3o.png)
+
+---
 ## ✔️ Resultados
 
 ![img](./src/imagens/tela1.png)
