@@ -51,6 +51,7 @@ document.getElementById("recarregar").addEventListener("click", () => {
 
 document.getElementById("filtroGeneroItem").addEventListener("change", () => {
   let gênero = document.querySelector(".filtro-genero");
+  setTimeout(()=> gênero.selectedIndex=0,3000);
   let personagensFiltrados = filtroDataGênero(characters, gênero.value);
   containerAnimes.innerHTML = "";
   mostrarPersonagens(personagensFiltrados);
@@ -58,6 +59,7 @@ document.getElementById("filtroGeneroItem").addEventListener("change", () => {
 
 document.getElementById("filtroEspecieItem").addEventListener("change", () => {
   let espécie = document.querySelector(".filtro-especie");
+  setTimeout(()=> espécie.selectedIndex=0,3000);
   let personagensFiltrados = filtroDataEspécie(characters, espécie.value);
   containerAnimes.innerHTML = "";
   mostrarPersonagens(personagensFiltrados);
@@ -67,6 +69,7 @@ document
   .getElementById("ordenacaoAlfabeticaItem")
   .addEventListener("change", () => {
     let nome = document.querySelector(".ordenacao-alfabetica");
+    setTimeout(()=> nome.selectedIndex=0,3000);
     let nomesOrdenados = ordenaçãoDataPersonagens(characters, nome.value);
     containerAnimes.innerHTML = "";
     mostrarPersonagens(nomesOrdenados);
@@ -76,6 +79,7 @@ document
   .getElementById("pesquisaConteinerItem")
   .addEventListener("keyup", () => {
     let nome = document.querySelector(".pesquisa-item");
+    setTimeout(()=> nome.selectedIndex=0,3000);
     let pesquisaDeNome = pesquisaDataNome(characters, nome.value);
     containerAnimes.innerHTML = "";
     mostrarPersonagens(pesquisaDeNome);
