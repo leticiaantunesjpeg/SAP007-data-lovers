@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./estilos/personagens.css" />
-    <link rel="shortcut icon" href="./imagens/Favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./imagens/Favicon.ico"
+      type="image/x-icon"
+    />
     <title>Personagens</title>
   </head>
   <body>
     <header>
       <nav class="navegacao-filmes">
-        <a href="./index.html" class="navegacao-item">Home</a>
+        <a href="./index.html" class="navegacao-item">Início</a>
         <a href="./filmes.html" class="navegacao-item">Filmes</a>
         <a href="./personagens.html" class="navegacao-item">Personagens</a>
       </nav>
@@ -23,67 +27,86 @@
 
     <section class="filtros-conteiner">
       <div class="filtro-conteiner-individual" id="pesquisaConteiner">
-        <input type="search" class="filtro-item pesquisa-item" id="pesquisaConteinerItem" placeholder= "Pesquise"  autocomplete="on" spellcheck="true"/>
+        <input
+          type="search"
+          class="filtro-item pesquisa-item"
+          id="pesquisaConteinerItem"
+          placeholder="Pesquise"
+          autocomplete="on"
+          spellcheck="true"
+        />
       </div>
-      
+
       <div class="filtro-conteiner-individual" id="ordenacaoAlfabetica">
-        <select class="filtro-item ordenação-alfabética" id="ordenacaoAlfabeticaItem">
-          <option class="ordenação-alfabética" value="">Ordem Afabética</option>
-          <option class="ordenação-alfabética" value="A-Z">A-Z</option>
-          <option class="ordenação-alfabética" value="Z-A">Z-A</option>
+        <select
+          class="filtro-item ordenacao-alfabetica"
+          id="ordenacaoAlfabeticaItem"
+        >
+          <option class="ordenacao-alfabetica" value="">Ordem Afabética</option>
+          <option class="ordenacao-alfabetica" value="A-Z">A-Z</option>
+          <option class="ordenacao-alfabetica" value="Z-A">Z-A</option>
         </select>
       </div>
 
-      <div class="filtro-conteiner-individual" id="filtroGênero">
-        <select class="filtro-item filtro-gênero" id="filtroGêneroItem">
-          <option class="filtro-gênero" value="">Gênero</option>
-          <option class="filtro-gênero"value="Female">Feminino</option>
-          <option class="filtro-gênero"value="Male">Masculino</option>
-          <option class="filtro-gênero"value="Unknown">Desconhecido</option>
-          <option class="filtro-gênero"value="NA">Sem Gênero</option>
+      <div class="filtro-conteiner-individual" id="filtroGenero">
+        <select class="filtro-item filtro-genero" id="filtroGeneroItem">
+          <option class="filtro-genero" value="">Gênero</option>
+          <option class="filtro-genero" value="Female">Feminino</option>
+          <option class="filtro-genero" value="Male">Masculino</option>
+          <option class="filtro-genero" value="Unknown">Desconhecido</option>
+          <option class="filtro-genero" value="NA">Sem Gênero</option>
         </select>
-    </div>
+      </div>
 
-    <div class="filtro-conteiner-individual" id="filtroEspécie">
-      <select class="filtro-item filtro-espécie" id="filtroEspécieItem">
-        <option class="filtro-espécie" value="">Espécie</option>
-        <option class="filtro-espécie" value="Human">Humano</option>
-        <option class="filtro-espécie" value="Totoro">Totoro</option>
-        <option class="filtro-espécie" value="Cat">Gato</option>
-        <option class="filtro-espécie" value="Witch">Bruxa</option>
-        <option class="filtro-espécie" value="Raccoon Dog">Raccoon Dog</option>
-        <option class="filtro-espécie" value="Red elk">Red elk</option>
-        <option class="filtro-espécie" value="Spirit">Espírito</option>
-        <option class="filtro-espécie" value="Wolf">Lobo</option>
-        <option class="filtro-espécie" value="Deity, Dragon">Deity, Dragon</option>
-        <option class="filtro-espécie" value="Spirit of The White Fox">Spirit of The White Fox</option>
-        <option class="filtro-espécie" value="unknown">Desconhecido</option>
-        <option class="filtro-espécie" value="Bird">Pássaro</option>
-        <option class="filtro-espécie" value="Wizard">Wizard</option>
-        <option class="filtro-espécie" value="Witch/Human">Witch/Human</option>
-        <option class="filtro-espécie" value="Demon">Demônio</option>
-        <option class="filtro-espécie" value="Human/Scarecrow">Human/Scarecrow</option>
-        <option class="filtro-espécie" value="Dog">Cachorro</option>
-        <option class="filtro-espécie" value="Arch-mage/Human">Arch-mage/Human</option>
-        <option class="filtro-espécie" value="Fish/Human">Fish/Human</option>
-        <option class="filtro-espécie" value="Deity">Deity</option>
-        <option class="filtro-espécie" value="Borrower">Borrower</option>
-      </select>
-    </div>
+      <div class="filtro-conteiner-individual" id="filtroEspecie">
+        <select class="filtro-item filtro-especie" id="filtroEspecieItem">
+          <option class="filtro-especie" value="">Espécie</option>
+          <option class="filtro-especie" value="Human">Humano</option>
+          <option class="filtro-especie" value="Totoro">Totoro</option>
+          <option class="filtro-especie" value="Cat">Gato</option>
+          <option class="filtro-especie" value="Witch">Bruxa</option>
+          <option class="filtro-especie" value="Raccoon Dog">
+            Raccoon Dog
+          </option>
+          <option class="filtro-especie" value="Red elk">Red elk</option>
+          <option class="filtro-especie" value="Spirit">Espírito</option>
+          <option class="filtro-especie" value="Wolf">Lobo</option>
+          <option class="filtro-especie" value="Deity, Dragon">
+            Deity, Dragon
+          </option>
+          <option class="filtro-especie" value="Spirit of The White Fox">
+            Spirit of The White Fox
+          </option>
+          <option class="filtro-especie" value="unknown">Desconhecido</option>
+          <option class="filtro-especie" value="Bird">Pássaro</option>
+          <option class="filtro-especie" value="Wizard">Wizard</option>
+          <option class="filtro-especie" value="Witch/Human">
+            Witch/Human
+          </option>
+          <option class="filtro-especie" value="Demon">Demônio</option>
+          <option class="filtro-especie" value="Human/Scarecrow">
+            Human/Scarecrow
+          </option>
+          <option class="filtro-especie" value="Dog">Cachorro</option>
+          <option class="filtro-especie" value="Arch-mage/Human">
+            Arch-mage/Human
+          </option>
+          <option class="filtro-especie" value="Fish/Human">Fish/Human</option>
+          <option class="filtro-especie" value="Deity">Deity</option>
+          <option class="filtro-especie" value="Borrower">Borrower</option>
+        </select>
+      </div>
 
       <div class="filtro-conteiner-individual">
         <button type="button" class="button" id="recarregar">Recarregar</button>
       </div>
+    </section>
 
-  </section>
+    <main class="conteiner-main">
+      <section id="containerCardItem"></section>
+    </main>
 
-  <main class="conteiner-main"> 
-  
-    <section id="containerCardItem"></section>
-  
-  </main>
-
-    <footer class="rodape">
+    <footer>
       <p>
         Desenvolvido por
         <a href="https://github.com/leticiaantunesjpeg" target="_blank"

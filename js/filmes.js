@@ -43,7 +43,7 @@ document.getElementById("filtroDiretorItem").addEventListener("change", () => {
 document
   .getElementById("filtroLancamentoItem")
   .addEventListener("change", () => {
-    let lançamento = document.querySelector(".filtro-lançamento");
+    let lançamento = document.querySelector(".filtro-lancamento");
     let filterItem = filtroDataLançamento(filmesData, lançamento.value);
     containerAnimes.innerHTML = "";
     filterItem.forEach(mostrarFilmes);
@@ -52,7 +52,7 @@ document
 document
   .getElementById("ordenacaoAlfabeticaItem")
   .addEventListener("change", () => {
-    let título = document.querySelector(".ordenação-alfabética");
+    let título = document.querySelector(".ordenacao-alfabetica");
     let títulosOrdenados = ordenaçãoDataFilmes(filmesData, título.value);
     containerAnimes.innerHTML = "";
     títulosOrdenados.forEach(mostrarFilmes);
