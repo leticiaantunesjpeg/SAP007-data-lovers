@@ -12,19 +12,20 @@ let filmesData = data.films;
 
 filmesData.forEach(mostrarFilmes);
 
+function defineQuantidadeCards(quantidade) {
+  const quantidadeCards = document.querySelector(".quantidadeCards");
+  quantidadeCards.textContent = "Total: " + quantidade;
+}
+defineQuantidadeCards(filmesData.length);
+
 function mostrarFilmes(data) {
-  const cardAnime = document.createElement("section");
+  const cardAnime = document.createElement("article");
   cardAnime.className = "container-card-individual";
   cardAnime.innerHTML = `
-    <div>
     <p class="informação"> ${data.title} </p>
-    <img src= '${data.poster}'></img><br>
-      </div>
-        
-      <div>
-      <div class="informação">Ano de lançamento: ${data.release_date}</div>
-      </div>
-      <div class="informação">Diretor: ${data.director}</div>
+    <img src= '${data.poster}'></img><br> 
+    <p class="informação">Ano de lançamento: ${data.release_date}</p>
+    <p class="informação">Diretor: ${data.director}</p>
       `;
   containerAnimes.appendChild(cardAnime);
 }
@@ -35,34 +36,42 @@ document.getElementById("recarregar").addEventListener("click", () => {
 
 document.getElementById("filtroDiretorItem").addEventListener("change", () => {
   let diretores = document.querySelector(".filtro-diretor");
+  setTimeout(() => (diretores.selectedIndex = 0), 3000);
   let filterItem = filtroDataDiretor(filmesData, diretores.value);
   containerAnimes.innerHTML = "";
   filterItem.forEach(mostrarFilmes);
+  defineQuantidadeCards(filterItem.length);
 });
 
 document
   .getElementById("filtroLancamentoItem")
   .addEventListener("change", () => {
     let lançamento = document.querySelector(".filtro-lancamento");
+    setTimeout(() => (lançamento.selectedIndex = 0), 3000);
     let filterItem = filtroDataLançamento(filmesData, lançamento.value);
     containerAnimes.innerHTML = "";
     filterItem.forEach(mostrarFilmes);
+    defineQuantidadeCards(filterItem.length);
   });
 
 document
   .getElementById("ordenacaoAlfabeticaItem")
   .addEventListener("change", () => {
     let título = document.querySelector(".ordenacao-alfabetica");
+    setTimeout(() => (título.selectedIndex = 0), 3000);
     let títulosOrdenados = ordenaçãoDataFilmes(filmesData, título.value);
     containerAnimes.innerHTML = "";
     títulosOrdenados.forEach(mostrarFilmes);
+    defineQuantidadeCards(títulosOrdenados.length);
   });
 
 document
   .getElementById("pesquisaConteinerItem")
   .addEventListener("keyup", () => {
     let título = document.querySelector(".pesquisa-item");
+    setTimeout(() => (título.selectedIndex = 0), 3000);
     let pesquisaDeTítulo = pesquisaDataTítulo(filmesData, título.value);
     containerAnimes.innerHTML = "";
     pesquisaDeTítulo.forEach(mostrarFilmes);
+    defineQuantidadeCards(pesquisaDeTítulo.length);
   });

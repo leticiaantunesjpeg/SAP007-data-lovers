@@ -121,6 +121,12 @@
   justify-content: center;
 }
 
+.quantidadeCards {
+  font-size: 25px;
+  text-align: center;
+  color:#474141;
+}
+
 .container-card-individual {
   box-shadow: 0 0 9px 0 #afcdeb;
   background-color: #e8f8fa;
